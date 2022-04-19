@@ -9,14 +9,13 @@ _No es un nombre muy original, lo admito..._
 
 
 
-### -- MANUAL DE USO APB --
+## Instrucciones de uso APB
 
 1. Usar el ejecutable "[Programa\bin\Debug\Creador-de-relleno.exe](https://github.com/Marin37/RellenadorDeDatos-ScriptsAHK/blob/main/Programa/bin/Debug/Creador-de-relleno.exe)" o bien abrir la solución (con Visual Studio) "[Programa\Creador-de-relleno.sln](https://github.com/Marin37/RellenadorDeDatos-ScriptsAHK/blob/main/Programa/Creador-de-relleno.sln)" o 
 
 2. Introducir parámetros requeridos al inicio, hacer click en el botón "Cargar Datos" e ingresar los datos que quiera que se escriban automáticamente. Para terminar de cargar, ingrese el valor de cierre que declaró (el mismo valor está por defecto)
 
-3. Para borrar o insertar seleccione un ítem en la lista 
-y presione el botón correspondiente. Si desea cancelar, cargue los valores por defecto de los parámetros y luego use el botón "Cancelar" o cierre el formulario (también se puede usar ESCape).
+3. **[EN PROCESO]** Para borrar o insertar seleccione un ítem en la lista y presione el botón correspondiente. Si desea cancelar, cargue los valores por defecto de los parámetros y luego use el botón "Cancelar" o cierre el formulario (también se puede usar ESCape).
 
 4. Instalar el programa [AutoHotKey](https://www.autohotkey.com/)
 _(puede ser desde "AutoHotkey_1.1.33.10_setup.exe" descargado oficialmente de https://www.autohotkey.com/). La "Instalación Express" es suficiente._
@@ -29,17 +28,19 @@ _(puede ser desde "AutoHotkey_1.1.33.10_setup.exe" descargado oficialmente de ht
 
 <br>
 
+## Parámetros requeridos
 
+- **Tiempo** - Es el tiempo en milisegundos que va a esperar el script antes de escribir el siguiente registro y presionar {Enter}. Mientras menor sea más rápido se ejecutará, pero si quiere verificarlo puede usar un tiempo más alto.
 
-### -- Parámetros Requeridos --
+- **Tecla** - La tecla mágica que asignada al script, será la que se utiliza para cargar todos los datos al ser presionada. Se recomienda asignar una tecla que no se use con frecuencia (por defecto F7). Recuerde cerrar el script desde la barra de tareas una vez finalizado.
 
-**Tiempo** - Es el tiempo en milisegundos que va a esperar el script antes de escribir el siguiente registro y presionar {Enter}. Mientras menor sea más rápido se ejecutará, pero si quiere verificarlo puede usar un tiempo más alto.
+- **Nombre** - Es el nombre del archivo que se va a utilizar, se solicita solo el nombre específico del ejercicio. Por ejemplo si guarda "Matrices2", el archivo final será "F7-Matrices2.ahk"
 
-**Tecla** - La tecla mágica que asignada al script, será la que se utiliza para cargar todos los datos al ser presionada. Se recomienda asignar una tecla que no se use con frecuencia (por defecto F7). Recuerde cerrar el script desde la barra de tareas una vez finalizado.
+- **VCierre**- El valor con el que quiere que termine el programa, ejemplos son 0, "X", "-1", entre otros. Al cargar este valor decide si quiere guardado al final o no. Por ejemplo si está testeando corte de control resulta conveniente dejarlo y al finalizar automáticamente se enviará el valor de cierre, pero si quiere agregar datos o el programa a testear corta automáticamente no es necesario.
 
-**Nombre** - Es el nombre del archivo que se va a utilizar, se solicita solo el nombre específico del ejercicio. Por ejemplo si guarda "Matrices2", el archivo final será "F7-Matrices2.ahk"
+<br>
 
-**VCierre**- El valor con el que quiere que termine el programa, ejemplos son 0, "X", "-1", entre otros. Al cargar este valor decide si quiere guardado al final o no. Por ejemplo si está testeando corte de control resulta conveniente dejarlo y al finalizar automáticamente se enviará el valor de cierre, pero si quiere agregar datos o el programa a testear corta automáticamente no es necesario.
+## To Do
 
-
-
+- Agregar borrar e insertar
+- Reestructurar para solo crear archvo al final
